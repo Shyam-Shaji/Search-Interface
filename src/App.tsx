@@ -1,16 +1,5 @@
 import './App.css';
-import { createFileRoute } from '@tanstack/react-router';
 import { SearchInterface, type SearchResult } from './components/search-interface';
-
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      {titile: "Debounced Search"},
-      {name: "description", content: "High performace search with debounced input and presisted state"},
-    ],
-  }),
-  component: App,
-})
 
 const DATASET: SearchResult[] = [
   { id: 1, title: "React", description: "A JavaScript library for building user interfaces." },
